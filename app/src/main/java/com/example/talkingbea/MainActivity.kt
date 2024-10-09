@@ -24,6 +24,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -84,23 +85,28 @@ fun FunnyImageApp() {
     var playingCount by remember { mutableIntStateOf(0) }
 
     fun playRandomAudio() {
-        val mediaPlayer = MediaPlayer.create(context, audioResIds.random())
-        playingCount++
-        isMouthOpen = true
+        if (isBlinking) {
+            isBlinking = false
+            playRandomAudio()
+        } else {
+            val mediaPlayer = MediaPlayer.create(context, audioResIds.random())
+            playingCount++
+            isMouthOpen = true
 
-        mediaPlayer.setOnCompletionListener {
-            it.release()  // Libera o MediaPlayer após a reprodução
-            playingCount--  // Decrementa a contagem de áudios tocando
+            mediaPlayer.setOnCompletionListener {
+                it.release()  // Libera o MediaPlayer após a reprodução
+                playingCount--  // Decrementa a contagem de áudios tocando
 
-            if (playingCount < 0) {
-                playingCount = 0
+                if (playingCount < 0) {
+                    playingCount = 0
+                }
+
+                if (playingCount == 0) {
+                    isMouthOpen = false
+                }
             }
-
-            if (playingCount == 0) {
-                isMouthOpen = false
-            }
+            mediaPlayer.start()
         }
-        mediaPlayer.start()
     }
 
 
@@ -163,13 +169,15 @@ fun FunnyImageApp() {
             modifier = Modifier
                 .padding(25.dp)
                 .fillMaxWidth()
-                .height(60.dp)
-                .background(color = PurpleGrey80, shape = RoundedCornerShape(30.dp))
+                .height(60.dp), colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF520093) // Usando a cor hexadecimal
+            )
+//                .background(color = , shape = RoundedCornerShape(30.dp))
 
         ) {
             Icon(
                 imageVector = Icons.Default.PlayArrow,  // Icone de Play
-                contentDescription = "Play", modifier = Modifier.size(40.dp)
+                contentDescription = "Play", modifier = Modifier.size(40.dp), tint = Color.White
             )
         }
 
