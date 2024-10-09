@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TalkingBea" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Personalize seu tema aqui. -->
+        <item name="android:windowSplashScreenBackground">#520093
+        </item> <!-- Cor de fundo -->
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_logo</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@android:color/white
+        </item> <!-- Cor de fundo do ícone -->
+        <item name="android:windowSplashScreenAnimationDuration">2000
+        </item> <!-- Duração em milissegundos -->
+    </style>
+</resources>
