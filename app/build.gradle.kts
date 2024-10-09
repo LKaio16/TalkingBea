@@ -66,6 +66,7 @@ dependencies {
     debugImplementation ("androidx.compose.ui:ui-tooling:1.5.1")
     implementation( "androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.activity:activity-compose:1.7.2")
+    implementation ("com.google.code.gson:gson:2.10")
     implementation (libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
