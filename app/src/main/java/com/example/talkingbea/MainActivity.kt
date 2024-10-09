@@ -81,6 +81,7 @@ fun FunnyImageApp() {
 
 //    Audios
     val audioResIds = listOf(R.raw.audio_eima, R.raw.audio_prakrlma)
+    val activePlayers = remember { mutableListOf<MediaPlayer>() }
 
     var playingCount by remember { mutableIntStateOf(0) }
 
@@ -93,9 +94,12 @@ fun FunnyImageApp() {
             playingCount++
             isMouthOpen = true
 
-            mediaPlayer.setOnCompletionListener {
-                it.release()  // Libera o MediaPlayer após a reprodução
-                playingCount--  // Decrementa a contagem de áudios tocando
+            activePlayers.add(mediaPlayer) // Adiciona MediaPlayer à lista activePlayers
+
+            mediaPlayer.setOnCompletionListener { player ->
+                player.release()
+                activePlayers.remove(player) // Remove o MediaPlayer da lista activePlayers
+                playingCount--
 
                 if (playingCount < 0) {
                     playingCount = 0
@@ -105,9 +109,11 @@ fun FunnyImageApp() {
                     isMouthOpen = false
                 }
             }
+
             mediaPlayer.start()
         }
     }
+
 
 
     val scale by animateFloatAsState(
