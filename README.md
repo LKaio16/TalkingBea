@@ -26,10 +26,10 @@ em cada atualização.
 <a href="#banner"><img align="left" src="https://raw.githubusercontent.com/xnbox/DeepfakeHTTP/main/img/image1.png" width="190"></a>
 <h3>Por que?</h3>
 <ul>
-    <li>Manter nossa amiga sempre por perto</li>
-    <li>Ajudar o usuário em qualquer momento do dia</li>
-    <li>Ei man</li>
-    <li>Meta de até 2026: o aplicativo superar a original</li>
+    <li>Manter nossa amiga sempre por perto.</li>
+    <li>Ajudar o usuário em qualquer momento do dia.</li>
+    <li>Ei man.</li>
+    <li>Meta de até 2026: o aplicativo superar a original.</li>
 </ul>
 <img width="1000" height="0">
 </td>
