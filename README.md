@@ -13,8 +13,9 @@
 ![Compose](https://img.shields.io/badge/-Compose-black?style=for-the-badge&logoColor=white&logo=jetpack-compose&color=4285F4)
 
 
-**Talking Bea** é uma futura assistente virtual que ajuda o usuario a sanar suas maiores duvidas com suas opinões **extremamente** bem formadas sobre qualquer assunto existente que seja. Buscando aumentar cada vez mais o leque de **respostas**
-em cada atualização.
+**Talking Bea** é uma futura assistente virtual que ajuda o usuário a sanar suas maiores dúvidas com suas opiniões **extremamente** bem formadas sobre qualquer assunto. Com cada atualização, ela busca expandir ainda mais seu leque de **respostas**, garantindo que você sempre tenha acesso a informações **relevantes**.
+
+<br>
 </div>
 
 <img align="center" src="https://raw.githubusercontent.com/LKaio16/TalkingBea/refs/heads/master/app/src/main/res/drawable/Thumbnail%20Rounded.png" width="">
@@ -28,8 +29,8 @@ em cada atualização.
 <ul>
     <li>Manter nossa amiga sempre por perto.</li>
     <li>Ajudar o usuário em qualquer momento do dia.</li>
-    <li>Ei man.</li>
     <li>Meta de até 2026: o aplicativo superar a original.</li>
+   <li>Ei man.</li>
 </ul>
 <img width="1000" height="0">
 </td>
@@ -42,3 +43,39 @@ em cada atualização.
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | 
 | <img src="https://raw.githubusercontent.com/LKaio16/TalkingBea/refs/heads/master/app/src/main/res/drawable/bea_idle.png" title="Desktop App  Login " width="50%" crossorigin> | <img src="https://raw.githubusercontent.com/LKaio16/TalkingBea/refs/heads/master/app/src/main/res/drawable/bea_idle_piscando.png" title="Desktop App Open" width="50%" crossorigin> | <img src="https://raw.githubusercontent.com/LKaio16/TalkingBea/refs/heads/master/app/src/main/res/drawable/bea_falando.png" title="Web App  PC  Drivers" width="50%" crossorigin> |
 
+
+## Futuras Frases
+<div align="center">
+<table>
+  <tr>
+    <td>ei man ✅</td>
+    <td>que foda</td>
+    <td>nem fudendo</td>
+    <td>ow mann</td>
+  </tr>
+  <tr>
+    <td>que cara foda</td>
+    <td>nuito foda</td>
+    <td>ra pa porra</td>
+    <td>ra pa merda</td>
+  </tr>
+  <tr>
+    <td>meu sonho</td>
+    <td>rapaz</td>
+    <td>eeegua</td>
+    <td>foi mal man</td>
+  </tr>
+  <tr>
+    <td>mto foda btl</td>
+    <td>caralho</td>
+    <td>sabe mto</td>
+    <td>pra tu ve</td>
+  </tr>
+  <tr>
+    <td>esse cara ai é foda</td>
+    <td>KKKKKKKKJJKJJK</td>
+    <td>ei man diabe isso ai</td>
+    <td></td>
+  </tr>
+</table>
+</div>
