@@ -55,7 +55,7 @@
   </tr>
   <tr>
     <td>que cara foda</td>
-    <td>nuito foda</td>
+    <td>muito foda</td>
     <td>ra pa porra</td>
     <td>ra pa merda</td>
   </tr>
